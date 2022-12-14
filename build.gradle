@@ -12,3 +12,8 @@ repositories {
     maven { url 'https://maven.aliyun.com/repository/public' }
     mavenCentral()
 }
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    api 'com.squareup.okhttp3:okhttp:4.10.0'
+}
