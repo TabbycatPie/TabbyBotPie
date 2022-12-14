@@ -6,12 +6,11 @@ import net.mamoe.mirai.event.SimpleListenerHost;
 import net.mamoe.mirai.event.events.FriendMessageEvent;
 
 public class Test extends SimpleListenerHost {
+    private TabbyCatPie FriendPie = new TabbyCatPie();
+
     @EventHandler
     public ListeningStatus onEvent(FriendMessageEvent event){
-        String msg = event.getMessage().contentToString();
-        if(msg.contains("派派")){
-            event.getSender().sendMessage("叫我吗？喵～");
-        }
+        FriendPie.pieHandleEvent(event,TabbyCatPie.MsgEvent.FRIEND_EVENT);
         return ListeningStatus.LISTENING;
     }
 }

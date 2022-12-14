@@ -11,7 +11,7 @@ public final class TabbyBotPie extends JavaPlugin {
 
     private boolean isEnabled = false;
 
-
+    private TabbyCatPie pie = new TabbyCatPie();
     private TabbyBotPie() {
         super(new JvmPluginDescriptionBuilder("work.caliburn.tabbybotpie", "0.1.0")
                 .name("TabbyBotPie")
