@@ -10,7 +10,7 @@ public class Test extends SimpleListenerHost {
 
     @EventHandler
     public ListeningStatus onEvent(FriendMessageEvent event){
-        FriendPie.pieHandleEvent(event,TabbyCatPie.MsgEvent.FRIEND_EVENT);
+        FriendPie.pieHandleEvent(event, TabbyCatPie.MsgEvent.FRIEND_EVENT);
         return ListeningStatus.LISTENING;
     }
 }
