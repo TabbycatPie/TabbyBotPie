@@ -1,6 +1,5 @@
 package work.caliburn;
 
-import net.dreamlu.mica.core.result.R;
 import net.mamoe.mirai.contact.User;
 import net.mamoe.mirai.event.events.FriendMessageEvent;
 import net.mamoe.mirai.event.events.GroupMessageEvent;
